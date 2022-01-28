@@ -1,4 +1,5 @@
-/* common styles */
+/* COMMON STYLES */
+
 :root {
   --white: #fff;
   --white-translucent: #d7ccc0;
@@ -104,8 +105,13 @@ h3 {
   content: "";
 }
 
-/* other styles */
+.video {
+  filter: drop-shadow(0 16px 32px #00000f);
+}
 
+/* OTHER STYLES */
+
+/* header */
 .header {
   height: 100%;
 
@@ -165,4 +171,32 @@ h3 {
 
 .header-detailed:hover {
   background-color: var(--primary-hover);
+}
+
+/* main */
+
+.main-title {
+  text-align: center;
+}
+
+.main-subtitle {
+  margin-bottom: 30px;
+
+  color: var(--dark);
+  text-align: center;
+}
+
+.main-video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-section .video {
+  z-index: 1;
+
+  margin-bottom: -200px;
+}
+
+.dark-translucent {
+  background-color: var(--dark-translucent);
 }
