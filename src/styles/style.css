@@ -145,15 +145,19 @@ p {
 }
 
 .section-img-wrapper {
-  margin-right: 30px;
+  justify-self: end;
 }
 
 .section-top {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 500px;
 
   gap: 30px;
+}
+
+.section-promo {
+  max-width: 500px;
 }
 
 .section-title {
@@ -185,7 +189,7 @@ p {
   text-transform: uppercase;
 }
 
-.section-description-wrapper {
+.section-description {
   break-inside: avoid;
 }
 
@@ -383,9 +387,18 @@ p {
   color: var(--white-translucent);
 }
 
-.optimization .section-title,
+/* .optimization .section-title,
 .depreciation .section-title,
 .optimization .section-text,
 .distortions .section-text {
   color: var(--white);
+} */
+
+.optimization .section-title,
+.optimization .section-text {
+  color: var(--white);
+}
+
+.optimization .section-top {
+  grid-template-columns: 500px 1fr;
 }
