@@ -37,11 +37,12 @@ body {
   margin: 0;
   padding: 0;
 
-  color: #2a2626;
+  color: var(--dark);
 }
 
 a {
   text-decoration: none;
+  color: var(--dark);
 }
 
 h1,
@@ -66,12 +67,27 @@ h3 {
   font-size: 34px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .text-orange {
   color: var(--primary);
 }
 
 .text-dark {
   color: var(--dark);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .vp-100 {
@@ -81,7 +97,7 @@ h3 {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 .column-2 {
@@ -91,6 +107,8 @@ h3 {
 
 .bg::before {
   position: absolute;
+  left: 0;
+  top: 0;
 
   width: 100%;
 
@@ -106,14 +124,17 @@ h3 {
 }
 
 .video {
-  filter: drop-shadow(0 16px 32px #00000f);
+  /* filter: drop-shadow(0 16px 32px #00000f); */
+  filter: drop-shadow(0 16px 32px #00000026);
 }
 
 /* OTHER STYLES */
 
 /* header */
 .header {
+  position: relative;
   height: 100%;
+  /* padding: 100px 0; */
 
   background-color: var(--light);
 }
@@ -194,9 +215,64 @@ h3 {
 .main-section .video {
   z-index: 1;
 
-  margin-bottom: -200px;
+  margin-bottom: -300px;
 }
 
-.dark-translucent {
-  background-color: var(--dark-translucent);
+.navigation {
+  margin-top: 100px;
+
+  background-color: var(--primary-dark);
+}
+
+.navigation-title {
+  font-size: 52px;
+  font-family: Neucha, sans-serif;
+
+  line-height: 62px;
+}
+
+.navigation-list {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 100px;
+}
+
+.navigation-item {
+  padding: 24px;
+
+  background-color: var(--white);
+}
+
+.navigation-item:first-child {
+  padding: 0;
+  background-color: var(--primary-dark);
+}
+
+.navigation-title {
+  margin: 0;
+}
+
+.navigation-number {
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: Neucha, sans-serif;
+  line-height: 1;
+}
+
+.navigation-subtitle {
+  margin-bottom: 16px;
+
+  font-family: Neucha, sans-serif;
+  font-size: 34px;
+}
+
+.navigation-item:hover:not(:first-child) {
+  background-color: var(--primary);
+}
+
+.navigation-item:hover,
+.navigation-item:hover .navigation-subtitle {
+  color: var(--white);
 }
