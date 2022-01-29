@@ -387,18 +387,14 @@ p {
   color: var(--white-translucent);
 }
 
-/* .optimization .section-title,
-.depreciation .section-title,
-.optimization .section-text,
-.distortions .section-text {
-  color: var(--white);
-} */
-
 .optimization .section-title,
-.optimization .section-text {
+.optimization .section-text,
+.depreciation .section-title,
+.depreciation .section-text {
   color: var(--white);
 }
 
-.optimization .section-top {
+.optimization .section-top,
+.depreciation .section-top {
   grid-template-columns: 500px 1fr;
 }
