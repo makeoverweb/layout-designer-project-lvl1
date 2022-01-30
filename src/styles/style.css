@@ -196,6 +196,11 @@ p {
 /* OTHER STYLES */
 
 /* header */
+
+iframe {
+  border: 0;
+}
+
 .header {
   position: relative;
 
@@ -250,6 +255,10 @@ p {
 }
 
 .header-detailed {
+  position: relative;
+
+  z-index: 10;
+
   display: inline-block;
   margin-top: 15px;
   padding: 12px 24px;
@@ -258,6 +267,8 @@ p {
   font-weight: bold;
 
   background-color: var(--primary);
+
+  cursor: pointer;
 }
 
 .header-detailed:hover {
