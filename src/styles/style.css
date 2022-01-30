@@ -229,8 +229,8 @@ iframe {
 .header-image-wrapper {
   position: absolute;
 
-  top: -55px;
-  right: -170px;
+  top: -50px;
+  right: -165px;
 
   height: 525px;
 }
@@ -265,6 +265,7 @@ iframe {
 
   color: var(--white);
   font-weight: bold;
+  text-transform: uppercase;
 
   background-color: var(--primary);
 
@@ -282,6 +283,8 @@ iframe {
 /* main */
 
 .main-title {
+  margin-bottom: 30px;
+
   text-align: center;
 }
 
