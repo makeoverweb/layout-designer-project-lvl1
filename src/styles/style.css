@@ -200,7 +200,12 @@ p {
   position: relative;
 
   height: 100%;
+}
 
+.header,
+.effect,
+.distortions,
+.planning {
   background-color: var(--light);
 }
 
@@ -397,4 +402,111 @@ p {
 .optimization .section-top,
 .depreciation .section-top {
   grid-template-columns: 500px 1fr;
+}
+
+.footer-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 55px;
+
+  background-color: var(--primary-dark);
+}
+
+.footer-mail {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.footer-subscribe {
+  font-size: 12px;
+}
+
+.footer-title {
+  width: 50%;
+}
+
+.footer-title,
+.footer-subscribe,
+.footer-mail,
+.footer-subscribe-link {
+  color: var(--white);
+}
+
+.footer-subscribe-link,
+.footer-article-link,
+.footer-hexlet-link {
+  text-decoration: underline;
+}
+
+.footer-article-link,
+.footer-hexlet-link {
+  color: var(--blue);
+}
+
+.footer-bottom {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 60px;
+}
+
+.footer-bottom span {
+  margin-bottom: 16px;
+}
+
+.footer-wrapper {
+  width: 50%;
+}
+
+.footer-input-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.footer-input {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 50px;
+
+  padding: 15px;
+}
+
+.footer-input::placeholder {
+  color: #757575;
+}
+
+.footer-input-wrapper::before {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--primary);
+  background-image: url("../assets/images/send.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+
+  content: "";
+}
+
+.footer-input-wrapper:hover::before {
+  background-color: var(--primary-hover);
 }
